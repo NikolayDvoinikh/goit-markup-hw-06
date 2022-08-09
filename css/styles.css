@@ -700,6 +700,10 @@ textarea {
 	outline: none;
 }
 
+.input-comment::placeholder {
+	color: rgba(117, 117, 117, 0.5);
+}
+
 .agreement {
 	font-style: normal;
 	line-height: 1.71;
@@ -748,6 +752,7 @@ textarea {
 .btn-submit:hover,
 .btn-submit:focus {
 	background-color: #188ce8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .input-field:hover,
 .input-field:focus,
