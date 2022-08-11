@@ -675,6 +675,7 @@ img {
 	border-radius: 4px;
 	cursor: pointer;
 	transition: border var(--transition-effect);
+	padding: 12px 0 12px 42px;
 }
 .input-comment {
 	margin-bottom: 20px;
@@ -737,9 +738,6 @@ textarea {
 	margin-bottom: 4px;
 }
 
-.check {
-	fill: transparent;
-}
 .check {
 	height: 15px;
 	width: 16px;
