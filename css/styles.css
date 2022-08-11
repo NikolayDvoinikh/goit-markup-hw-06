@@ -749,11 +749,9 @@ textarea {
 	fill: transparent;
 	margin-right: 7px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	transition: background-color var(--transition-effect), border var(--transition-effect);
 }
 .agreement-input:checked + .agreement .check {
-	fill: var(--second-text-color);
 	background-color: var(--accent-color);
 	border: none;
 }
