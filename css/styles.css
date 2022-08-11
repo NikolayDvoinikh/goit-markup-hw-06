@@ -13,7 +13,7 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	letter-spacing: 0.03em;
-	width: 1600px;
+	max-width: 1600px;
 }
 
 p,
@@ -645,7 +645,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	outline: none;
+	outline: transparent;
 	transition: background-color var(--transition-effect), fill var(--transition-effect);
 }
 .close-button:hover,
@@ -673,7 +673,6 @@ img {
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
-	margin-bottom: 10px;
 	cursor: pointer;
 	transition: border var(--transition-effect);
 }
@@ -697,17 +696,34 @@ img {
 }
 input,
 textarea {
-	outline: none;
+	outline: transparent;
 }
 
 .input-comment::placeholder {
 	color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-field {
+	margin-bottom: 10px;
+}
+
+.input-wrap {
+	position: relative;
+}
+.input-icon {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
+}
+
 .agreement {
-	font-style: normal;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 .agreement > a {
 	color: var(--accent-color);
@@ -720,16 +736,27 @@ textarea {
 	letter-spacing: 0.01em;
 	margin-bottom: 4px;
 }
-.checkbox-policy {
+
+.check {
+	fill: transparent;
+}
+.check {
+	height: 15px;
+	width: 16px;
+	border-radius: 2px;
+	background-color: transparent;
+	border: 2px solid #212121;
+	fill: transparent;
+	margin-right: 7px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 30px;
 }
-.agreement-input {
-	margin-right: 7px;
+.agreement-input:checked + .agreement .check {
+	fill: var(--second-text-color);
+	background-color: var(--accent-color);
+	border: none;
 }
-
 .btn-submit {
 	padding: 10px 52px;
 	background-color: var(--accent-color);
