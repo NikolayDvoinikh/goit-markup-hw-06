@@ -716,6 +716,7 @@ textarea {
 	top: 50%;
 	left: 15px;
 	transform: translateY(-50%);
+	transition: fill var(--transition-effect);
 }
 
 .agreement {
@@ -782,4 +783,7 @@ textarea {
 .input-comment:hover,
 .input-comment:focus {
 	border: 1px solid var(--accent-color);
+}
+.input-field:focus + .input-icon {
+	fill: var(--accent-color);
 }
