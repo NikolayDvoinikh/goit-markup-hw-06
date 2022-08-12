@@ -13,7 +13,6 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	letter-spacing: 0.03em;
-	max-width: 1600px;
 }
 
 p,
@@ -633,8 +632,8 @@ img {
 
 .close-button {
 	position: absolute;
-	top: 7px;
-	right: 15px;
+	top: 8px;
+	right: 8px;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
